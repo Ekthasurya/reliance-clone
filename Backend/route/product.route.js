@@ -40,52 +40,34 @@ router.get('/view-pro', async (req, res) => {
         
         const { sortBy, order = 'asc', filterBy, filterValue, page = 1, limit = 10 } = req.query;
 
-        
-        console.log("Query Params:", req.query);
-
-        
         const query = {};
         if (filterBy && filterValue) {
             query[filterBy] = filterValue;
         }
 
-        
-        const validSortFields = ["name", "price", "category"]; 
-        if (sortBy && !validSortFields.includes(sortBy)) {
-            return res.status(400).json({ message: `Invalid sort field: ${sortBy}` });
-        }
-
-        
         const sort = {};
         if (sortBy) {
             sort[sortBy] = order === 'desc' ? -1 : 1;
         }
 
-        
         const products = await Product.find(query)
             .sort(sort)
             .skip((page - 1) * limit)
             .limit(Number(limit));
 
-        
         const totalProducts = await Product.countDocuments(query);
 
-
-        console.log("Products fetched:", products);
-        console.log("Total Products Count:", totalProducts);
-
-    
-        res.status(200).json({
+        res.json({
             totalProducts,
             totalPages: Math.ceil(totalProducts / limit),
             currentPage: Number(page),
             products
         });
     } catch (error) {
-        console.error("Error in /view-pro route:", error);
-        res.status(500).json({ message: "An error occurred while fetching products. Please try again later." });
+        res.status(500).json({ message: error.message });
     }
 });
+
  
 
 // to get a single product by id
