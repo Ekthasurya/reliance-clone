@@ -19,7 +19,7 @@ app.use('/product',router)
 app.use('/razor', razorRouter)
 
 app.get("/", (req, res)=>{
-    res.send("Hello World");
+    res.send("Hello World,welcome");
 });
 
 
