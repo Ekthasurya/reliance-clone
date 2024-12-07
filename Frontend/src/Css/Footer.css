@@ -1,0 +1,90 @@
+.social-logo{
+    display: flex;
+    gap: 3px;
+}
+.downlod-app img{
+    height: 42px;
+}
+.downlod-app{
+    display: flex;
+    gap: 5px;
+}
+.footer{
+    display: flex;
+    justify-content:space-around;
+    gap: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #003381;
+    color: white;
+    font-weight: 500;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+.foot-one{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.one-first{
+    display:flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.one-second{
+    display:flex;
+    flex-direction: column;
+    gap: 5px; 
+}
+.foot-two{
+    display:flex;
+    flex-direction: column;
+    gap: 70px; 
+}
+.two-first{
+    display:flex;
+    flex-direction: column;
+    gap: 10px; 
+}
+.foot-three{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.foot-four{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.foot-head{
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.two-second{
+    display:flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footer-end{
+    background-color: #0b254a;
+    color: white;
+    
+}
+.footer-end h3{
+    text-align: center;
+    text-decoration: underline;
+}
+.footer-end p{
+    font-size: 13px;
+    text-align: center;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+.last-foot{
+    text-align: center;
+    background-color: #0b254a;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
