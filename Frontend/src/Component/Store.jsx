@@ -19,7 +19,11 @@ const Store = () => {
         <p className='second-para'>near you</p>
         <div className='store-logo-one'><RiUserLocationFill size={22} /></div>
        </div>
-       <div className='second-store'></div>
+       <div className='second-store'>
+          <div><input type="text" /></div>
+          <p>or Use</p>
+          <div></div>
+       </div>
     </div>
     </>
   )

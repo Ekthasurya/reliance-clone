@@ -144,7 +144,7 @@
 }
 
 /* Hover Effect on Menu Item */
-.menu-item a:hover {
+.hober:hover {
   background-color: #FF0000;
   /* Red background */
  
@@ -260,4 +260,8 @@
 }
 .drop-head{
   font-weight: 600;
+}
+.hover-box a:hover{
+  color:aqua;
+  background-color: none;
 }

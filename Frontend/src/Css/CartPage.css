@@ -1,0 +1,24 @@
+.cart-cover{
+   width: 250px;
+   border:1px solid rgba(0, 0, 0, .102) ;
+   padding: 20px;
+   margin: 5px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+.cart-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.empty{
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 150px;
+}
+.cart-head{
+    border:1px solid rgba(0, 0, 0, .102) ;
+   padding: 20px;
+   margin: 5px;
+   text-align: center;
+}

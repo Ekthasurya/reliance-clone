@@ -5,7 +5,7 @@ import { IoPersonOutline } from 'react-icons/io5';
 import { GoChevronDown } from 'react-icons/go';
 import { Link } from 'react-router-dom';
 
-const Navbar = () => {
+const Navbar = ({ cartItemCount }) => {
     return (
         <>
             <div className='first-nav'>
@@ -30,25 +30,25 @@ const Navbar = () => {
                 <div className='second-last-nav'>
                     <p>Select your Pin Code</p>
                     <p>l</p>
-                    <div className='cart-nav'><div className='cart-logo'><FaShoppingCart/></div> <p>Cart</p></div>
+                    <a href="#/cart"><div className='cart-nav'><div className='cart-logo'><FaShoppingCart/></div> <p>Cart</p></div></a>
                     <p>l</p>
-                    <div className='login-nav'><div className='login-logo'><IoPersonOutline /></div> <p>Login</p></div>
+                    <a href="#/login"><div className='login-nav'><div className='login-logo'><IoPersonOutline /></div> <p>Login</p></div></a>
                 </div>
             </div>
     <nav class="navbar">
     <ul class="menu">
       <li class="menu-item">
-        <a href="#"><div className='nav-point'><p>MOBILES & TABLETS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div></a>
+        <a className='hober' href="#"><div className='nav-point'><p>MOBILES & TABLETS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div></a>
         <div class="hover-box">
           <div className='cover-box'>
             <div className='first-line'>
           <div className='first-one'>
-            <p className='drop-head'>Smartphone</p>
+          <a href="#/smartphones"> <p className='drop-head'>Smartphone</p></a>
             <p>Redmi @Lowest Price*</p>
             <p>OnePlus CE3 Lite @Lowest Price*</p>
           </div>
           <div className='first-two'>
-            <p className='drop-head'>Smartwathes</p>
+          <a href="#/smartwatches"> <p className='drop-head'>Smartwathes</p></a>
             <p>Apple</p>
             <p>Samsung</p>
             <p>Fireboltt</p>
@@ -56,9 +56,9 @@ const Navbar = () => {
             <p>Boat</p>
           </div>
           <div className='first-three'>
-            <p className='drop-head'>Accessories</p>
-            <p>Tablet Accessories</p>
-            <p>Mobile Accessories</p>
+          <a href="#/tabletAccessories"><p className='drop-head'>Accessories</p></a>
+          <a href="#/tabletAccessories"><p>Tablet Accessories</p></a>
+          <a href="#/mobileAccessories"><p>Mobile Accessories</p></a>
             <p>Mobile Grips & Stands</p>
             <p>Car Mobile Holders</p>
             <p>Memory Cards</p>
@@ -93,7 +93,7 @@ const Navbar = () => {
 
 
       <li class="menu-item">
-        <a href="#"> <div className='nav-point'><p>TELEVISIONS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"> <div className='nav-point'><p>TELEVISIONS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -136,7 +136,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#"> <div className='nav-point'><p>AUDIO</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"> <div className='nav-point'><p>AUDIO</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -170,7 +170,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#">   <div className='nav-point'><p>HOME APPLIANCES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#">   <div className='nav-point'><p>HOME APPLIANCES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -224,7 +224,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#"> <div className='nav-point'><p>COMPUTERS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"> <div className='nav-point'><p>COMPUTERS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -287,7 +287,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#"> <div className='nav-point'><p>CAMERAS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"> <div className='nav-point'><p>CAMERAS</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -321,7 +321,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#"><div className='nav-point'><p>KITCHEN APPLIANCES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"><div className='nav-point'><p>KITCHEN APPLIANCES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -384,7 +384,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#">  <div className='nav-point'><p>PERSONAL CARE</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#">  <div className='nav-point'><p>PERSONAL CARE</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>
@@ -411,7 +411,7 @@ const Navbar = () => {
       </li>
 
       <li class="menu-item">
-        <a href="#"> <div className='nav-point'><p>ACCESSORIES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
+        <a className='hober' href="#"> <div className='nav-point'><p>ACCESSORIES</p><div className='nav-point-logo'><GoChevronDown size={18} /></div></div>
         </a>
         <div class="hover-box">
         <div className='cover-box'>

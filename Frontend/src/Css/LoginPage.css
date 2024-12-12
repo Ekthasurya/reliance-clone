@@ -1,0 +1,44 @@
+.auth-page{
+    border:1px solid rgba(0, 0, 0, .102) ;
+    padding: 20px;
+    margin: 15px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.from-input{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.from-input button{
+    padding: 5px;
+    background-color: #e4252a;
+    color: #fff;
+    border-radius: 3px;
+    border: none;
+}
+.from-input p{
+    color: blue;
+}
+.input-email input{
+    padding: 5px;
+} 
+.input-password input{
+    padding: 5px;
+}
+.input-username input{
+    padding: 5px;
+} 
+.Login-head{
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+.img-login img{
+    width: 850px;
+    padding: 20px;
+}
+.parent-login{
+    display: flex;
+}

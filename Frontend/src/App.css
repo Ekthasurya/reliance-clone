@@ -4,3 +4,9 @@
     margin: 0;
     font-size: 15px;
 }
+.home-div{
+    height: auto;
+}
+.home-div p{
+    margin: 20px;
+}

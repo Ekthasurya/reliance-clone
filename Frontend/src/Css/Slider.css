@@ -1,0 +1,79 @@
+.sliderContainer {
+    position: relative;
+    max-width: 1300px;
+    margin: 20px ;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #fff;
+    border:1px solid rgba(0, 0, 0, .102) ;
+  }
+  
+  .sliderWrapper {
+    overflow: hidden;
+  }
+  
+  .Slider {
+    transition: transform 0.5s ease;
+  }
+  
+  .sliderItem {
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  
+  .product-image {
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+  }
+  
+  .product-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin: 5px 0;
+    color: #333;
+  }
+  
+  .product-price {
+    font-size: 14px;
+    color: #007bff;
+  }
+  
+  .sliderBtn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sliderBtn.Prev {
+    left: 10px;
+    margin-right: 10px;
+  }
+  
+  .sliderBtn.Next {
+    right: 10px;
+  }
+  
+  .sliderBtn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
