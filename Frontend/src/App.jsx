@@ -15,6 +15,8 @@ import TabletAccessories from './Page/TabletAccessories'
 import TabletAccessoriesSingle from './Page/TabletAccessoriesSingle'
 import MobileAccessories from './Page/MobileAccessories'
 import MobileAccessoriesSingle from './Page/MobileAccessoriesSingle'
+import MemoryCards from './Page/MemoryCards'
+import MemoryCardsSingle from './Page/MemoryCardsSingle'
 
 function App() {
   const [cart, setCart] = useState([]);
@@ -43,8 +45,8 @@ function App() {
         <Route path='/tabletAccessories/:id' element={<TabletAccessoriesSingle addToCart={addToCart} />} />
         <Route path='/mobileAccessories' element={<MobileAccessories />} />
         <Route path='/mobileAccessories/:id' element={<MobileAccessoriesSingle addToCart={addToCart} />} />
-        <Route path='/mobileAccessories' element={<MobileAccessories />} />
-        <Route path='/mobileAccessories/:id' element={<MobileAccessoriesSingle addToCart={addToCart} />} />
+        <Route path='/memoryCards' element={<MemoryCards />} />
+        <Route path='/memoryCards/:id' element={<MemoryCardsSingle addToCart={addToCart} />} />
 
       </Routes>
       <Footer />

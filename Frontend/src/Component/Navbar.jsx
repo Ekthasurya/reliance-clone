@@ -16,9 +16,9 @@ const Navbar = ({ cartItemCount }) => {
                 <p>Contact us</p>
             </div>
             <div className='second-nav'>
-                <div className='logo'>
+            <a href="#/"> <div className='logo'>
                     <img src="https://www.reliancedigital.in/build/client/images/loaders/rd_logo.svg" alt="logo" />
-                </div>
+                </div></a>
                 <div className='search-bar'>
                     <form class="search-bar" action="/search" method="GET">
                         <div class="input-container">
@@ -59,9 +59,9 @@ const Navbar = ({ cartItemCount }) => {
           <a href="#/tabletAccessories"><p className='drop-head'>Accessories</p></a>
           <a href="#/tabletAccessories"><p>Tablet Accessories</p></a>
           <a href="#/mobileAccessories"><p>Mobile Accessories</p></a>
-            <p>Mobile Grips & Stands</p>
+          <p>Mobile Grips & Stands</p>
             <p>Car Mobile Holders</p>
-            <p>Memory Cards</p>
+            <a href="#/memoryCards"><p>Memory Cards</p></a>
             <p>Cables & Cords</p>
             <p>Chargers & Adapters</p>
           </div>

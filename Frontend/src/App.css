@@ -10,3 +10,12 @@
 .home-div p{
     margin: 20px;
 }
+.grid-image{
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+.grid-image img{
+    width: 330px;
+}
