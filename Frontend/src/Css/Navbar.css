@@ -262,6 +262,9 @@
   font-weight: 600;
 }
 .hover-box a:hover{
-  color:aqua;
+ 
   background-color: none;
+}
+.cover-box p:hover{
+  color:aqua;
 }
