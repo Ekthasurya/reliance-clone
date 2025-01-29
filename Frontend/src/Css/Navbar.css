@@ -406,3 +406,12 @@
     margin-right: 5px;
   }
 }
+
+@media (max-width: 768px) {
+  .second-last-nav{
+    margin-right: 10px;
+  }
+  .res-serch-logo{
+    width: 400px;
+  }
+}

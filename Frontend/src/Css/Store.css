@@ -88,9 +88,7 @@
     transition: background-color 0.3s;
   }
   
-  button:hover {
-    background-color: #e67e22;
-  }
+ 
   
   .use-location button {
     display: flex;
@@ -185,4 +183,88 @@
       width: 70%;
     }
   }
+
+  /* Responsive Design for 420px */
+@media (max-width: 420px) {
+  /* General Page Styling */
+  .store-page {
+    padding: 10px;
+  }
+
+  /* Store Header */
+  .store-head {
+    margin-top: 20px;
+    align-items: flex-start;
+  }
+
+  .first-store {
+    font-size: 24px;
+  }
+
+  .second-para {
+    font-size: 16px;
+  }
+
+  /* Search Section */
+  .search-section {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .location-search {
+    flex-direction: column;
+    align-items: stretch;
+    max-width: 100%;
+  }
+
+  .location-search input {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .use-location button {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  /* Store Listings */
+  .store-listings h3 {
+    font-size: 24px;
+  }
+
+  .store-item {
+    flex-direction: column;
+    padding: 15px;
+    margin-bottom: 15px;
+  }
+
+  .store-item h4 {
+    font-size: 18px;
+  }
+
+  .store-item p {
+    font-size: 14px;
+  }
+
+  .store-item .contact-info,
+  .store-item .store-details {
+    font-size: 12px;
+  }
+
+  /* Store Item Details */
+  .store-item .store-details {
+    margin-top: 10px;
+    text-align: left;
+  }
+}
+
   

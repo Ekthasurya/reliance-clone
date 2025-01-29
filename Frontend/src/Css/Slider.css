@@ -134,3 +134,45 @@
     font-size: 14px;
   }
 }
+/* Responsive Styling for 420px */
+@media (max-width: 420px) {
+  .sliderContainer {
+    padding: 8px;
+    max-width: 100%;
+  }
+
+  .sliderItem {
+    flex: 0 0 100%; /* Show only 1 item per slide */
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .product-image {
+    max-height: 120px; /* Reduce image height */
+    border-radius: 5px;
+  }
+
+  .product-name {
+    font-size: 12px; /* Adjust text size */
+  }
+
+  .product-price {
+    font-size: 10px;
+  }
+
+  .sliderBtn {
+    width: 25px;
+    height: 25px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .sliderBtn.Prev {
+    left: 5px;
+  }
+
+  .sliderBtn.Next {
+    right: 5px;
+  }
+}
+

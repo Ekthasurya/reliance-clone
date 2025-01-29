@@ -137,3 +137,58 @@
     padding: 8px;
   }
 }
+
+/* Responsive styles for 420px */
+@media (max-width: 420px) {
+  .cart-page {
+    padding: 5px;
+  }
+
+  .cart-page h1 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .cart-head {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 5px 0;
+  }
+
+  .cart-head h2 {
+    font-size: 18px;
+  }
+
+  .cart-grid {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+
+  .cart-cover {
+    padding: 8px;
+    border-radius: 5px;
+  }
+
+  .cart-cover h3 {
+    font-size: 13px;
+    text-align: center;
+  }
+
+  .cart-cover p {
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .cart-cover img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 3px;
+  }
+
+  .cart-cover button {
+    font-size: 12px;
+    padding: 6px;
+    width: 100%;
+  }
+}

@@ -19,7 +19,8 @@
   
   .grid-image img {
     width: 100%; /* Make the images scale with the grid items */
-    max-width: 330px; /* Optional: Limit the maximum width */
+    max-width: 330px;
+    
   }
   
   /* For screens 1024px and smaller */
@@ -40,6 +41,8 @@
   @media (max-width: 480px) {
     .grid-image {
       grid-template-columns: 1fr; /* Single column for small screens */
+      width: 330px;
+      margin-left: 40px;
     }
   }
   
