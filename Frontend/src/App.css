@@ -42,7 +42,7 @@
     .grid-image {
       grid-template-columns: 1fr; /* Single column for small screens */
       width: 330px;
-      margin-left: 40px;
+      
     }
   }
   
