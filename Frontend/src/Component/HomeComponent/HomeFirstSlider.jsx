@@ -11,8 +11,6 @@ const images=[
     "https://www.reliancedigital.in/medias/v1-Apple-AirPods-Banner-1365x260.jpg?context=bWFzdGVyfGltYWdlc3wxMDA2MTJ8aW1hZ2UvanBlZ3xpbWFnZXMvaDIzL2gzZi8xMDIyODMxODQzNzQwNi5qcGd8ZjRiYzgxYzc5MDQzN2VjMzRlZWY4OTdiNWZlYmMzYjgxZWIyOGZjNWMyNzM3MDA4NmY4MjYxYjFhZDM1MDJlYg",
     "https://www.reliancedigital.in/medias/CLP1-Bigger-TV-Banner-D.jpg?context=bWFzdGVyfGltYWdlc3wxMjQ5NzF8aW1hZ2UvanBlZ3xpbWFnZXMvaDZjL2gwOC8xMDIyOTQ0OTI2MTA4Ni5qcGd8MzkwZDFkOTEyZDVmNWMxMGMwNjQxZWVhZjE4YTZkYWQ5ZmM1ZmRlODg3NzlmZjljNTMzOTQ3ZTQzMjY3OTQwNQ",
 ]
-
-
 const HomeFirstSlider = () => {
     const [currentIndex, setCurrentIndex] = useState(0);
   const delay = 8000;

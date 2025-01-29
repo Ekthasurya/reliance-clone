@@ -10,12 +10,36 @@
 .home-div p{
     margin: 20px;
 }
-.grid-image{
+.grid-image {
     margin: 10px;
     display: grid;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-columns: repeat(4, 1fr); /* Default: 4 columns */
     gap: 5px;
-}
-.grid-image img{
-    width: 330px;
-}
+  }
+  
+  .grid-image img {
+    width: 100%; /* Make the images scale with the grid items */
+    max-width: 330px; /* Optional: Limit the maximum width */
+  }
+  
+  /* For screens 1024px and smaller */
+  @media (max-width: 1024px) {
+    .grid-image {
+      grid-template-columns: repeat(3, 1fr); /* Reduce to 3 columns */
+    }
+  }
+  
+  /* For screens 768px and smaller */
+  @media (max-width: 768px) {
+    .grid-image {
+      grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+    }
+  }
+  
+  /* For screens 480px and smaller */
+  @media (max-width: 480px) {
+    .grid-image {
+      grid-template-columns: 1fr; /* Single column for small screens */
+    }
+  }
+  

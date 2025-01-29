@@ -1,157 +1,235 @@
-.parent{
-    display: flex;
-    justify-content: space-between;
+/* Base styles */
+.parent {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
 }
 
-
-.headbox p{
-    font-size: 18px;
-    font-weight: 600;
+.filter {
+  display: block;
 }
-.headbox{
-    background: #fff;
-    border: 1px solid rgba(0, 0, 0, .102);
-    font-weight: 600;
-    margin: 0 0 10px;
-    padding: 20px;
-    width: 300px;
-    margin: 15px;
+
+.headbox p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.headbox {
+  background: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  font-weight: 600;
+  margin: 0 0 10px;
+  padding: 20px;
+  width: 300px;
+  margin: 15px;
 }
 
 .price-filter {
-    width: 300px;
-    margin: 15px;
-    font-family: Arial, sans-serif;
-    background-color: #fff;
-    border:1px solid rgba(0, 0, 0, .102) ;
-    padding: 20px;
+  width: 300px;
+  margin: 15px;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  padding: 20px;
+}
+
+.price-filter h4 {
+  margin-bottom: 10px;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 10px;
+  margin: 10px 0;
+}
+
+.slider-track {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.slider-thumb {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #1e90ff;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.price-values {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.price-values span {
+  font-size: 14px;
+}
+
+.input1-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.input1-container input {
+  width: 50px;
+  padding: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.input1-container button {
+  padding: 5px 15px;
+  background: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input1-container button:hover {
+  background: #104e8b;
+}
+
+.cover-check {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  padding: 20px;
+  width: 300px;
+  margin: 15px;
+  gap: 10px;
+}
+
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+.checkbox-container input[type="checkbox"] {
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.checkbox-container label {
+  cursor: pointer;
+}
+
+.product-head {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  padding: 20px;
+  margin: 15px ;
+  max-width: 1000px;
+}
+
+.sorting-button-cover {
+  display: flex;
+  gap: 5px;
+}
+
+.pro {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.product-card {
+  background-color: #fff;
+  border: 1px solid rgba(0, 0, 0, 0.102);
+  padding: 15px;
+  margin: 15px;
+  width: 100%;
+  max-width: 250px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Responsive styles for 1024px */
+@media (max-width: 1024px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  
-  .price-filter h4 {
-    margin-bottom: 10px;
-  }
-  
-  .slider-container {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    margin: 10px 0;
-  }
-  
-  .slider-track {
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background: #000;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-  
-  .slider-thumb {
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    background: #1e90ff;
-    border: 2px solid white;
-    border-radius: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    cursor: pointer;
-  }
-  
-  .price-values {
-    display: flex;
-    justify-content: space-between;
-    margin: 10px 0;
-  }
-  
-  .price-values span {
-    font-size: 14px;
-  }
-  
-  .input1-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 10px;
-  }
-  
-  .input1-container input {
-    width: 50px;
-    padding: 5px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    text-align: center;
-  }
-  
-  .input1-container button {
-    padding: 5px 15px;
-    background: #1e90ff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  .input1-container button:hover {
-    background: #104e8b;
-  }
-  .cover-check{
-    display: flex;
+
+  .parent {
     flex-direction: column;
-    background-color: #fff;
-    border:1px solid rgba(0, 0, 0, .102) ;
-    padding: 20px;
-    width: 300px;
-    margin: 15px;
+    align-items: center;
+  }
+  .filter {
+    display: none;
+  }
+
+  .headbox, .price-filter, .cover-check {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .product-head {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sorting-button-cover {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Responsive styles for 768px */
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 15px;
+  }
+
+  .product-card {
+    width: 100%;
+  }
+  .filter {
+    display:none;
+  }
+
+  .parent {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .headbox, .price-filter, .cover-check {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0;
+  }
+
+  .input1-container {
+    flex-direction: column;
     gap: 10px;
   }
-  .checkbox-container {
-    display: flex;
-    align-items: center;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    
-
-  }
-
-  .checkbox-container input[type="checkbox"] {
-    margin-right: 8px;
-    cursor: pointer;
-  }
-
-  .checkbox-container label {
-    cursor: pointer;
-  }
-  .product-head{
-    display: flex;
-    justify-content: space-around;
-    background-color: #fff;
-    border:1px solid rgba(0, 0, 0, .102) ;
-    padding: 20px;
-    margin: 15px;
-  }
-  .sorting-button-cover{
-    display: flex;
-    gap: 5px;
-  }
-  .pro{
-    width: 1000px;
-  }
-  .product-card{
-    background-color: #fff;
-    border:1px solid rgba(0, 0, 0, .102) ;
-    padding: 20px;
-    margin: 15px;
-    width: 250px;
-  }
-  .product-list{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-  }
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-  
+}

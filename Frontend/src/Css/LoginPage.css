@@ -1,44 +1,142 @@
-.auth-page{
-    border:1px solid rgba(0, 0, 0, .102) ;
+/* General Auth Page Styling */
+.auth-page {
+    border: 1px solid rgba(0, 0, 0, 0.102);
     padding: 20px;
-    margin: 15px;
+    margin: 15px auto;
     width: 400px;
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.from-input{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .from-input {
     display: flex;
     flex-direction: column;
     gap: 15px;
-}
-.from-input button{
-    padding: 5px;
+    width: 100%;
+  }
+  
+  .from-input button {
+    padding: 10px;
     background-color: #e4252a;
     color: #fff;
-    border-radius: 3px;
+    border-radius: 5px;
     border: none;
-}
-.from-input p{
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  
+  .from-input button:hover {
+    background-color: #c21e24;
+  }
+  
+  .from-input p {
     color: blue;
-}
-.input-email input{
-    padding: 5px;
-} 
-.input-password input{
-    padding: 5px;
-}
-.input-username input{
-    padding: 5px;
-} 
-.Login-head{
-    font-size: 22px;
-    margin-bottom: 3px;
-}
-.img-login img{
-    width: 850px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .input-email input,
+  .input-password input,
+  .input-username input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    width: 100%;
+  }
+  
+  .Login-head {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  .img-login img {
+    width: 100%;
+    max-width: 850px;
     padding: 20px;
-}
-.parent-login{
+    border-radius: 8px;
+  }
+  
+  .parent-login {
     display: flex;
-}
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  /* Responsive Styling for 1024px */
+  @media (max-width: 1024px) {
+    .auth-page {
+      width: 350px;
+      padding: 15px;
+    }
+  
+    .from-input button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .input-email input,
+    .input-password input,
+    .input-username input {
+      padding: 8px;
+      font-size: 13px;
+    }
+  
+    .img-login img {
+      max-width: 700px;
+    }
+  
+    .parent-login {
+      gap: 20px;
+    }
+  }
+  
+  /* Responsive Styling for 768px */
+  @media (max-width: 768px) {
+    .auth-page {
+      width: 90%;
+      padding: 10px;
+    }
+  
+    .from-input {
+      gap: 10px;
+    }
+  
+    .from-input button {
+      font-size: 14px;
+      padding: 8px;
+    }
+  
+    .input-email input,
+    .input-password input,
+    .input-username input {
+      padding: 8px;
+      font-size: 12px;
+    }
+  
+    .Login-head {
+      font-size: 20px;
+      margin-bottom: 5px;
+    }
+  
+    .img-login img {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .parent-login {
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+  }
+  

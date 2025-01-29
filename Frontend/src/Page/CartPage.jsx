@@ -1,7 +1,10 @@
 import React from "react";
-import "../Css/CartPage.css"
+import { useNavigate } from "react-router-dom";
+import "../Css/CartPage.css";
 
 const CartPage = ({ cart, setCart }) => {
+  const navigate = useNavigate();
+
   // Calculate total price and total quantity
   const totalItems = cart.length;
   const totalPrice = cart.reduce((total, item) => total + item.price, 0);
@@ -54,6 +57,21 @@ const CartPage = ({ cart, setCart }) => {
               </li>
             ))}
           </ul>
+
+          <button
+            onClick={() => navigate("/payment")}
+            style={{
+              marginTop: "20px",
+              padding: "10px 20px",
+              backgroundColor: "green",
+              color: "white",
+              border: "none",
+              borderRadius: "5px",
+              cursor: "pointer",
+            }}
+          >
+            Proceed to Payment
+          </button>
         </>
       )}
     </div>

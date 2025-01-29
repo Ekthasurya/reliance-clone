@@ -68,6 +68,7 @@ const MemoryCards = () => {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
             const data = await response.json();
+            console.log("Fetched Data:", data);
             setProducts(data.products || []);
         } catch (error) {
             console.error("Error fetching products:", error);

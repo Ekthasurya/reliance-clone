@@ -3,6 +3,8 @@ import HomeFirstSlider from '../Component/HomeComponent/HomeFirstSlider'
 import SmartphonesSlider from '../Component/HomeComponent/SmartphonesSlider'
 import SmartwatchesSingle from './SmartwatchesSingle'
 import SmartwatchesSlider from '../Component/HomeComponent/SmartwatchesSlider'
+import AccessoriesSlider from '../Component/HomeComponent/AccessoriesSlider'
+import PERSONALCAREslider from '../Component/HomeComponent/PERSONALCAREslider'
 
 const HomePage = () => {
   return (
@@ -24,6 +26,10 @@ const HomePage = () => {
         <img src="https://www.reliancedigital.in/medias/bau-tile-7-ref-241103.jpg?context=bWFzdGVyfGltYWdlc3wyMDIyOHxpbWFnZS9qcGVnfGltYWdlcy9oYjYvaDQyLzEwMjE3OTY1ODQ2NTU4LmpwZ3xkMzUyNTk2OWNiMjg0ZWUyNDI4OGFhOWVkY2ZkMTNhOTUyZjVmZWJlNmJhNmM2ZDI0ZGJjODRkYjJmNWVkYWY4" alt="" />
         <img src="https://www.reliancedigital.in/medias/Samsung-Watch-7-GDOE-BAU-340x255.jpg?context=bWFzdGVyfGltYWdlc3w0NDUxMHxpbWFnZS9qcGVnfGltYWdlcy9oYWEvaGM4LzEwMjIyOTM5MTExNDU0LmpwZ3w1NWE1ZWVhYjgwMzg5ZDQwZTM5ZjlhMTk0OGNlYjRiMDRmNjBjMGJjODYyZTc3Y2JhYWIyYTQxMDAwYzhiMDZm" alt="" />
       </div>
+      <p>Avail No-cost EMI </p>
+      <div><AccessoriesSlider/></div>
+      <p>Winter Ready Hot Water Anytime You Need | Upto 50% Off</p>
+      <div><PERSONALCAREslider/></div>
     </div>
   )
 }

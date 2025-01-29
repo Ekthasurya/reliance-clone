@@ -77,21 +77,26 @@
   display: flex;
   gap: 8px;
   margin-top: 17px;
+  margin-left: 110px;
 }
 
 .second-nav {
   display: flex;
-  justify-content: space-between;
   padding: 0px 16px;
   background-color: #e4252a;
   color: white;
   font-weight: 500;
 }
 
+.res-serch-logo{
+  display: flex;
+  justify-content:space-around;
+  width: 900px;
+}
+
 .third-nav {
   display: flex;
   justify-content: space-evenly;
-
   font-size: 13px;
   background-color: #003381;
   padding: 5px 16px;
@@ -119,6 +124,7 @@
   background-color: #003366;
   /* Dark blue background */
   padding: 5px 10px;
+  /* display: flex; */
 }
 
 .menu {
@@ -134,7 +140,7 @@
   overflow: hidden;
 }
 
-.menu-item a {
+.hober {
   text-decoration: none;
   color: #ffffff;
   /* White text */
@@ -267,4 +273,136 @@
 }
 .cover-box p:hover{
   color:aqua;
+}
+
+/* Container */
+.navbar-container {
+  position: relative;
+  font-family: Arial, sans-serif;
+  display: none;
+}
+
+/* Menu Icon */
+.menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+/* Drawer */
+/* Drawer */
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background: whitesmoke;
+  color:black;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* Prevent scrolling outside */
+}
+
+/* Drawer Header */
+.drawer-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  background:#FF0000;
+  font-size: 18px;
+  flex-shrink: 0; /* Prevent header from shrinking */
+}
+
+/* Navigation List */
+.nav-list {
+  overflow-y: auto; /* Enable vertical scrolling */
+  flex-grow: 1; /* Allow the list to take up remaining space */
+  padding: 10px;
+}
+
+.accordion {
+  margin-bottom: 10px;
+}
+
+.accordion-header {
+  padding: 10px;
+  background:white;
+  cursor: pointer;
+  font-size: 16px;
+  color:black;
+}
+
+.accordion-header:hover {
+  background:whitesmoke;
+}
+
+.accordion-body {
+  background: whitesmoke;
+  padding: 5px 10px;
+}
+
+.sub-nav {
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  color:black;
+}
+
+
+
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar-container {
+    display: block;
+  }
+  .second-last-nav p{
+    display: none;
+  }
+  .first-nav{
+    display: none;
+  }
+  
+  .menu-icon{
+    margin-top: 3px;
+  }
+  
+}
+
+@media (max-width: 768px) {
+ 
+
+  .drawer-header {
+    font-size: 16px; /* Adjust font size in drawer header */
+  }
+
+  .accordion-header {
+    font-size: 14px; /* Adjust font size for accordion headers */
+  }
+
+  .sub-nav {
+    font-size: 12px; /* Adjust font size for sub-nav items */
+  }
+  .res-serch-logo{
+    display: flex;
+    flex-direction: column;
+  }
+  .input-container{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    max-width: 500px;
+  }
+  .search-button {
+    right: -30%;
+    top: 40%;
+  }
+  .second-last-nav{
+    margin-right: 5px;
+  }
 }
