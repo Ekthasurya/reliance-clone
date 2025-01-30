@@ -1,12 +1,55 @@
-# Reliance Clone (Full-Stack)
-This is a full-stack project that mimics the features of the Reliance e-commerce website. The project is built with React for the front-end and Node.js with Express for the back-end. It features user authentication, product management, and a shopping cart, offering a complete e-commerce experience.
+# Reliance Clone (Full-Stack E-Commerce Application)
 
-## 🚀 Features
-- **Responsive Design**: Fully responsive for mobile, tablet, and desktop views.
-- **User Authentication**: Users can register, log in, and manage their profiles.
-- **Product Listings**: Display various products with images, prices, and descriptions.
-- **Product Details Page**: View detailed information about each product.
-- **Add to Cart**: Users can add products to their cart and manage quantities.
-- **Order Management**: View and place orders, with a mock payment system.
-- **State Management**: Context API for global state management in React.
-- **Backend API**: RESTful API for handling user authentication, product management, and order processing.
+*A full-stack e-commerce web application built with React, Node.js, and MongoDB.*
+
+## 🚀 Live Demo  
+🔗 [Reliance Clone Live](https://reliance-clone-l92m.vercel.app/)  
+
+---
+
+## 📌 Features
+
+✅ Fully responsive design (mobile, tablet, and desktop)  
+✅ User authentication (JWT-based login & registration)  
+✅ Product listing and details page  
+✅ Add to cart and order management  
+✅ REST API backend with Express.js  
+✅ State management with Context API  
+✅ Secure password hashing (bcrypt.js)  
+
+---
+
+## 🛠 Tech Stack
+
+### **Frontend**
+- React.js
+- React Router
+- Context API
+- Axios
+- CSS
+
+### **Backend**
+- Node.js
+- Express.js
+- MongoDB (Mongoose)
+- JWT Authentication
+- bcrypt.js (password hashing)
+
+### **Deployment**
+- **Frontend:** [Vercel](https://vercel.com)  
+- **Backend:** [Render](https://render.com)
+
+---
+
+## 🔧 Installation & Setup
+
+### **Prerequisites**
+Ensure you have the following installed before running the project:
+- **Node.js** (v14+)
+- **npm** or **yarn**
+- **MongoDB** (local or cloud-based)
+
+### **Clone the repository**
+```bash
+git clone https://github.com/Ekthasurya/reliance-clone.git
+cd reliance-clone
